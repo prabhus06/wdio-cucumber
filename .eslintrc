@@ -1,0 +1,44 @@
+{
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"plugins": ["wdio"],
+	"extends": ["eslint:recommended", "plugin:wdio/recommended", "google"],
+	"parserOptions": {
+		"ecmaVersion": 12
+	},
+	"rules": {
+		"no-console": "warn",
+		"semi": ["error", "always"],
+		"quotes": ["error", "single"],
+		"max-len": [
+			"error",
+			{
+				"code": 110
+			}
+		],
+		"indent": ["error", 4],
+		"arrow-spacing": [
+			"error",
+			{
+				"before": true,
+				"after": true
+			}
+		],
+		"array-bracket-newline": ["error", "always"]
+	},
+	"overrides": [
+		{
+			"files": ["config/wdio.conf.js"],
+			"rules": {
+				"max-len": [
+					"error",
+					{
+						"code": 130
+					}
+				]
+			}
+		}
+	]
+}

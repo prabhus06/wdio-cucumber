@@ -31,16 +31,6 @@ class ActionHelper {
 		return element.getText()
 	}
 
-	isDisplayed(element) {
-		element.waitForDisplayed()
-		return element.isDisplayed()
-	}
-
-	isExisting(element) {
-        element.waitForDisplayed();
-        return element.isExisting();
-    }
-
 	getPageTitle(pageTitle) {
 		browser.waitUntil(
 			function () {

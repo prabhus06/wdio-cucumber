@@ -1,13 +1,9 @@
 @wip
-Feature: The Internet Guinea Pig Website
+Feature: Google search
 
-  Scenario Outline: As a user, I can log into the secure area
+  Scenario: As a user, I can log into the secure area
 
-    Given I am on the login page
-    When I login with <username> and <password>
-    Then I should see a flash message saying <message>
-
-    Examples:
-      | username | password             | message                        |
-      | tomsmith | SuperSecretPassword! | You logged into a secure area! |
-      | foobar   | barfoo               | Your username is invalid!      |
+    Given I am on the google page
+    When I enter "Selenium Webdriver" into the search box
+    And  I click the search button
+    Then I should see a list of search results
