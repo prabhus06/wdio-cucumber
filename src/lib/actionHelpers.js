@@ -17,7 +17,7 @@ class ActionHelper {
 	}
 
 	click(element) {
-		element.waitForDisplayed()
+		element.waitForClickable()
 		element.click()
 	}
 
