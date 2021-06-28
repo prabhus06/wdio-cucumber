@@ -4,7 +4,7 @@
 		"node": true
 	},
 	"plugins": ["wdio"],
-	"extends": ["eslint:recommended", "plugin:wdio/recommended", "google"],
+	"extends": ["eslint:recommended", "plugin:wdio/recommended"],
 	"parserOptions": {
 		"ecmaVersion": 12
 	},

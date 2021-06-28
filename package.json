@@ -10,7 +10,7 @@
 		"prettier-check": "prettier --check .",
 		"prettier-write": "prettier --write .",
 		"lint": "eslint .",
-		"lint-fix": "estlint . --fix",
+		"lint-fix": "eslint --fix --ext .js,.jsx .",
 		"code:gherkin": "npx gherkin-lint -c .gherkin-lintrc.json src/features",
 		"cucumber:undefined:step": "npx cucumber-js --dry-run --require './dist/src/**/steps/*.js' ./dist/src/features --format summary",
 		"cucumber:unused:step": "npx ./dist/src/utils/CucumberStepManager.js"
