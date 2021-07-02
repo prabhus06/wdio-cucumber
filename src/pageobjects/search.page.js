@@ -45,7 +45,9 @@ class SearchPage extends Page {
 	}
 
 	search(item) {
-		ActionHelper.click(this.agreeTerms)
+		if (this.agreeTerms.isDisplayed()) {
+			ActionHelper.click(this.agreeTerms)
+		}
 		ActionHelper.setValue(this.searchField, item)
 	}
 

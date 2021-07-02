@@ -134,7 +134,7 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: [['allure', {outputDir: 'allure-report'}]],
+    reporters: [['allure', {outputDir: './test-report/allure-report'}]],
 
 
     //
@@ -243,8 +243,9 @@ exports.config = {
     /**
      * Runs after a Cucumber scenario
      */
-    // afterScenario: function (world) {
-    // },
+    afterScenario: function (world) {
+        browser.deleteCookies();
+     },
     /**
      * Runs after a Cucumber feature
      */
