@@ -13,12 +13,10 @@ exports.config = {
                 //headless: true
             }
         },
-
-        // {
-        //   maxInstances: 5,
-        //   browserName: 'safari',
-        // },
-
-      ]
-    }
+			// {
+			//   maxInstances: 5,
+			//   browserName: 'safari',
+			// },
+		],
+	},
 }

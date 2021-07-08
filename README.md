@@ -6,6 +6,7 @@ wdio
 
 - webdriverIO (v7)
 - cucumber (v7)
+- appium (v7)
 
 # Features:
 
