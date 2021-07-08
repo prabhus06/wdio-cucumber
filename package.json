@@ -6,14 +6,14 @@
 	"scripts": {
 		"test-local": "wdio run ./config/wdio.local.conf.js --cucumberOpts.tagExpression='@wip'",
 		"test-sauce": "wdio run ./config/wdio.sauce.conf.js --cucumberOpts.tagExpression='@wip'",
-		"open-allure": "allure generate ./test-report/allure-report --clean && allure open",
+		"report:allure": "allure generate --clean ./test-report/allure-report  && allure open",
 		"prettier-check": "prettier --check .",
 		"prettier-write": "prettier --write .",
 		"lint": "eslint .",
 		"lint-fix": "eslint --fix --ext .js,.jsx .",
 		"code:gherkin": "npx gherkin-lint -c .gherkin-lintrc.json src/features",
-		"cucumber:undefined:step": "npx cucumber-js --dry-run --require './dist/src/**/steps/*.js' ./dist/src/features --format summary",
-		"cucumber:unused:step": "npx ./dist/src/utils/CucumberStepManager.js"
+		"cucumber:undefined:step": "npx cucumber-js --dry-run --require './src/step-definitions/*.js' ./src/features/ --format summary",
+		"cucumber:unused:step": "node ./src/utils/CucumberStepManager.js"
 	},
 	"keywords": [
 		"wdio",

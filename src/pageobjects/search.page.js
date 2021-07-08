@@ -1,5 +1,5 @@
-const ActionHelper = require('./../lib/actionHelpers')
-import Page from './page'
+const ActionHelper = require('./../lib/actionHelpers');
+const Page = require('./page');
 
 /**
  * sub page containing specific selectors and methods for a specific page
@@ -56,4 +56,4 @@ class SearchPage extends Page {
 	}
 }
 
-export default new SearchPage()
+module.exports = new SearchPage();

@@ -1,6 +1,6 @@
-import { exec } from 'child_process'
+const { exec } = require('child_process');
 const command =
-	'npx cucumber-js --dry-run --require "./dist/src/step-definitions/*.js" --format usage-json ./dist/src/features'
+	'npx cucumber-js --dry-run --require "./src/step-definitions/*.js" --format usage-json ./src/features'
 const commandOptions = {
 	maxBuffer: 5 * 1024 * 1024,
 }
