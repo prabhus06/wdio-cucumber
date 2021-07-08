@@ -1,4 +1,4 @@
-import Page from './page'
+const Page = require('./page');
 
 /**
  * sub page containing specific selectors and methods for a specific page
@@ -12,4 +12,4 @@ class ResultsPage extends Page {
 	}
 }
 
-export default new ResultsPage()
+module.exports = new ResultsPage();

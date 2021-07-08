@@ -52,7 +52,6 @@ exports.config = {
 	// https://docs.saucelabs.com/reference/platforms-configurator
 	//
 	//capabilities: [{
-
 	// maxInstances can get overwritten per capability. So if you have an in-house Selenium
 	// grid with only 5 firefox instances available you can make sure that not more than
 	// 5 instances get started at a time.
@@ -113,7 +112,6 @@ exports.config = {
 	// your test setup with almost no effort. Unlike plugins, they don't add new
 	// commands. Instead, they hook themselves up into the test process.
 	//services: ['selenium-standalone', { drivers: { firefox: '0.29.1', chrome: true, chromiumedge: 'latest' } }],
-
 	// Framework you want to run your specs with.
 	// The following are supported: Mocha, Jasmine, and Cucumber
 	// see also: https://webdriver.io/docs/frameworks
@@ -134,8 +132,7 @@ exports.config = {
 	// Test reporter for stdout.
 	// The only one supported by default is 'dot'
 	// see also: https://webdriver.io/docs/dot-reporter
-	reporters: [['allure', { outputDir: 'allure-report' }]],
-
+	reporters: [['allure', { outputDir: './test-report/allure-report' }]],
 	//
 	// If you are using Cucumber you need to specify the location of your step definitions.
 	cucumberOpts: {
@@ -242,8 +239,9 @@ exports.config = {
 	/**
 	 * Runs after a Cucumber scenario
 	 */
-	// afterScenario: function (world) {
-	// },
+	afterScenario: function (world) {
+        browser.deleteCookies();
+	},
 	/**
 	 * Runs after a Cucumber feature
 	 */
