@@ -198,7 +198,7 @@ exports.config = {
 	 * @param {Array.<String>} specs List of spec file paths that are to be run
 	 */
 	beforeSession: function (config, capabilities, specs) {
-		require('expect-webdriverio').setOptions({ wait: 2000 })
+		require('expect-webdriverio').setOptions({ wait: 2000 });
 	},
 	/**
 	 * Gets executed before test execution begins. At this point you can access to all global
@@ -240,7 +240,7 @@ exports.config = {
 	 * Runs after a Cucumber scenario
 	 */
 	afterScenario: function (world) {
-        browser.deleteCookies();
+		browser.deleteCookies();
 	},
 	/**
 	 * Runs after a Cucumber feature
@@ -291,4 +291,4 @@ exports.config = {
 	 */
 	//onReload: function(oldSessionId, newSessionId) {
 	//}
-}
+};

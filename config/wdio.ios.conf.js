@@ -1,4 +1,4 @@
-const { config } = require('./wdio.conf')
+const { config } = require('./wdio.conf');
 
 exports.config = {
 	...config,
@@ -34,4 +34,4 @@ exports.config = {
 			},
 		],
 	},
-}
+};

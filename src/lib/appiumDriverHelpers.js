@@ -1,5 +1,5 @@
 class AppiumDriverHelpers {
 	launchApp() {
-		driver.launchApp()
+		driver.launchApp();
 	}
 }

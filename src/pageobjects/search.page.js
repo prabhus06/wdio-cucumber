@@ -9,22 +9,22 @@ class SearchPage extends Page {
 	 * define selectors using getter methods
 	 */
 	get inputUsername() {
-		return $('#username')
+		return $('#username');
 	}
 	get inputPassword() {
-		return $('#password')
+		return $('#password');
 	}
 	get btnSubmit() {
-		return $('button[type="submit"]')
+		return $('button[type="submit"]');
 	}
 	get agreeTerms() {
-		return $('#L2AGLb')
+		return $('#L2AGLb');
 	}
 	get searchField() {
-		return $('[name="q"]')
+		return $('[name="q"]');
 	}
 	get clickSearchButton() {
-		return $('[name="btnK"]')
+		return $('[name="btnK"]');
 	}
 
 	/**
@@ -32,27 +32,27 @@ class SearchPage extends Page {
 	 * e.g. to login using username and password
 	 */
 	login(username, password) {
-		this.inputUsername.setValue(username)
-		this.inputPassword.setValue(password)
-		this.btnSubmit.click()
+		this.inputUsername.setValue(username);
+		this.inputPassword.setValue(password);
+		this.btnSubmit.click();
 	}
 
 	/**
 	 * overwrite specifc options to adapt it to page object
 	 */
 	open() {
-		return super.open('https://google.com/')
+		return super.open('https://google.com/');
 	}
 
 	search(item) {
 		if (this.agreeTerms.isDisplayed()) {
-			ActionHelper.click(this.agreeTerms)
+			ActionHelper.click(this.agreeTerms);
 		}
-		ActionHelper.setValue(this.searchField, item)
+		ActionHelper.setValue(this.searchField, item);
 	}
 
 	clickSubmitButton() {
-		ActionHelper.click(this.clickSearchButton)
+		ActionHelper.click(this.clickSearchButton);
 	}
 }
 

@@ -1,4 +1,4 @@
-const { config } = require('./wdio.conf')
+const { config } = require('./wdio.conf');
 
 exports.config = {
 	...config,
@@ -10,7 +10,7 @@ exports.config = {
 		capabilities: [
 			{
 				maxInstances: 5,
-				browserName: 'firefox',
+				browserName: 'chrome',
 				browserVersion: 'latest',
 				platformName: 'Windows 10',
 				'sauce:options': {
@@ -19,4 +19,4 @@ exports.config = {
 			},
 		],
 	},
-}
+};

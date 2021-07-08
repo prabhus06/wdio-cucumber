@@ -8,7 +8,7 @@ class ResultsPage extends Page {
 	 * define selectors using getter methods
 	 */
 	get searchResults() {
-		return $('h1=Search Results')
+		return $('h1=Search Results');
 	}
 }
 
