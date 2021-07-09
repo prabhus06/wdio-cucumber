@@ -41,6 +41,11 @@ class ActionHelper {
 		);
 		return browser.getTitle();
 	}
+
+	switchToIframe(element) {
+		element.waitForDisplayed();
+		browser.switchToFrame(element);
+	}
 }
 
 module.exports = new ActionHelper();

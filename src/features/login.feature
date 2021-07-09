@@ -1,9 +1,7 @@
-@wip
-Feature: Google search
+Feature: Login Function
 
-  Scenario: As a user, I can log into the secure area
+    Scenario: As a user, I can log into the secure area
 
-    Given I am on the google page
-    When I enter "Selenium Webdriver" into the search box
-    And  I click the search button
-    Then I should see a list of search results
+        Given I am on the login page
+        When I login with "PAYM Legal Owner User" credentials
+        Then I should be displayed with dashboard page

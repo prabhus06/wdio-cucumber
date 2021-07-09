@@ -3,10 +3,6 @@ const { Given, When, Then } = require('@cucumber/cucumber');
 const SearchPage = require('../pageobjects/search.page');
 const ResultsPage = require('../pageobjects/results.page');
 
-const pages = {
-	search: SearchPage,
-};
-
 Given(/^I am on the google page$/, () => {
 	SearchPage.open();
 });

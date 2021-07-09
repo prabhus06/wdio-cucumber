@@ -6,7 +6,7 @@ exports.config = {
 		user: process.env.SAUCE_USERNAME,
 		key: process.env.SAUCE_ACCESS_KEY,
 		region: 'eu',
-		services: ['sauce'],
+		services: ['selenium-standalone', 'sauce', 'appium'],
 		capabilities: [
 			{
 				maxInstances: 5,
