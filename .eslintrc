@@ -18,7 +18,7 @@
 				"code": 110
 			}
 		],
-		"indent": ["error", 4],
+		//"indent": ["error", 4],
 		"arrow-spacing": [
 			"error",
 			{
@@ -30,7 +30,7 @@
 	},
 	"overrides": [
 		{
-			"files": ["config/wdio.conf.js"],
+			"files": ["config/*.js"],
 			"rules": {
 				"max-len": [
 					"error",

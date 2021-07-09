@@ -17,6 +17,7 @@ wdio
 - Integrated with [babel](https://www.npmjs.com/package/Babel) to seamlessly load from many different types of files.
 - Integrated with [prettier](https://www.npmjs.com/package/prettier) for code formatting.
 - Integrated with [allure-reporter](https://www.npmjs.com/package/@wdio/allure-reporter) for detailed reporting
+- Supoprts Data Module
 - [gherkin-lintrc]
 - [eslintrc]
 - [applitools] for UI testing

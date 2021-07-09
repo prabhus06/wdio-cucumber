@@ -1,5 +1,4 @@
 const Page = require('./page');
-const ActionHelper = require('./../lib/actionHelpers');
 
 /**
  * sub page containing specific selectors and methods for a specific page
