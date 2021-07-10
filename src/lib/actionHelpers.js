@@ -37,7 +37,7 @@ class ActionHelper {
 				return browser.getTitle() === pageTitle;
 			},
 			10000,
-			'title is not displayed after the given time',
+			'title is not displayed after the given time'
 		);
 		return browser.getTitle();
 	}
